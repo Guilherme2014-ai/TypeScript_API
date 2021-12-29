@@ -1,0 +1,6 @@
+.env
+node_modules
+ormconfig.json
+dist
+dist/server.js
+dist/app.js
