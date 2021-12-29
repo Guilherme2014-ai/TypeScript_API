@@ -1,28 +1,34 @@
 # API TYPE-SCRIPT
 
-## Regras
-- Cadastro de Usuário
+## About the API
+This API was made by me to pratice my skill's in TypeScript, SQL Relations and S.O.L.I.D Principles.
 
-		[ x ] Não é Permitido Cadastrar mais de um Usuário com o Mesmo E-mail.
+Database Used: Mysql
+ORM Used: Type ORM
 
-		[ x ] Não é Permitido Cadastrar um Usuário sem E-mail.
+## Business Rule
+- User Registration
 
+		[ x ] It's not Allowed to Register two or more Users with the same E-mail.
 
-- Cadatro de Tag
-
-		[ x ] Não é Permitido Cadastrar mais de uma Tag com o mesmo Nome.
-
-		[ x ] Não é Permitido Cadastrar Tag sem Nome.
-
-		[ x ] Não é Permitido Cadastro de Tag's através de um Usuário não Admin.
+		[ x ] It's not Allowed to Register a User without a E-mail.
 
 
-- Cadastro de Compliment's(Elogios)
+- Tag Registration
 
-		[ x ] Não e Permitido um Usuário fazer um Elogio com o "user_sender" sendo preenchido com o id de outra pessoa a não o dele mesmo.
+		[ x ] It's not Allowed to Register two or more Tag with the same Name.
 
-		[ x ] Não e Permitido um Usuário fazer um Elogio para si mesmo.
+		[ x ] It's not Allowed to Register a User without a E-mail.
 
-		[ x ] Não e Permitido fazer um Elogios para Usuários Inválido.
+		[ x ] It's not Allowed to Register a Tag through a non Admin User.
 
-		[ x ] Não é Permitido Usuário não Logado Fazer Elogios.
+
+- Compliment Registration
+
+		[ x ] It's not Allowed a User Register a Compliment with the Field "user_sender" being a different value from his own id.
+
+		[ x ] The User is not Allowed to Register a Compliment to himself.
+
+		[ x ] It's not Allowed to Register a Compliment to an Invalid User.
+
+		[ x ] A logged out User cannot make a Compliment.
